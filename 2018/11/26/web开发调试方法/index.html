@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="什么是nvmnvm 全称 Node Version Manager是Node版本管理器，它让我们能方便的对Node的版本进行切换。 安装nvm1curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash  查看可用的Node版本 1nvm ls  安装稳定的版本 1nvm install">
+<meta name="description" content="本文主要总结目前常用的几种调试方法。 console调试log调试法，很无脑，非常实用1console.log(&amp;apos;hello world‘) 浏览器F12断点调试能更好的理解JS是一种单线程的语言F10 单行执行 (更建议新手采用这种，很容易理解JS语法) 移动端调试 vConsolevConsole下载123456&amp;lt;script src=&amp;quot;js/vconsole.min">
 <meta property="og:type" content="article">
-<meta property="og:title" content="nvm管理Node版本">
-<meta property="og:url" content="http://yoursite.com/2018/11/25/nvm管理Node版本/index.html">
+<meta property="og:title" content="web开发调试方法">
+<meta property="og:url" content="http://yoursite.com/2018/11/26/web开发调试方法/index.html">
 <meta property="og:site_name" content="明日">
-<meta property="og:description" content="什么是nvmnvm 全称 Node Version Manager是Node版本管理器，它让我们能方便的对Node的版本进行切换。 安装nvm1curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash  查看可用的Node版本 1nvm ls  安装稳定的版本 1nvm install">
+<meta property="og:description" content="本文主要总结目前常用的几种调试方法。 console调试log调试法，很无脑，非常实用1console.log(&amp;apos;hello world‘) 浏览器F12断点调试能更好的理解JS是一种单线程的语言F10 单行执行 (更建议新手采用这种，很容易理解JS语法) 移动端调试 vConsolevConsole下载123456&amp;lt;script src=&amp;quot;js/vconsole.min">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-27T23:37:00.746Z">
+<meta property="og:updated_time" content="2018-11-27T23:41:40.488Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="nvm管理Node版本">
-<meta name="twitter:description" content="什么是nvmnvm 全称 Node Version Manager是Node版本管理器，它让我们能方便的对Node的版本进行切换。 安装nvm1curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash  查看可用的Node版本 1nvm ls  安装稳定的版本 1nvm install">
+<meta name="twitter:title" content="web开发调试方法">
+<meta name="twitter:description" content="本文主要总结目前常用的几种调试方法。 console调试log调试法，很无脑，非常实用1console.log(&amp;apos;hello world‘) 浏览器F12断点调试能更好的理解JS是一种单线程的语言F10 单行执行 (更建议新手采用这种，很容易理解JS语法) 移动端调试 vConsolevConsole下载123456&amp;lt;script src=&amp;quot;js/vconsole.min">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/25/nvm管理Node版本/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/26/web开发调试方法/">
 
 
 
 
 
-  <title>nvm管理Node版本 | 明日</title>
+  <title>web开发调试方法 | 明日</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/25/nvm管理Node版本/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/26/web开发调试方法/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Memoresun">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">nvm管理Node版本</h1>
+          <h1 class="post-title" itemprop="name headline">web开发调试方法</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-25T22:00:00+08:00">
-                2018-11-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-26T22:00:00+08:00">
+                2018-11-26
               </time>
             
 
@@ -299,27 +299,11 @@
       
 
       
-        <h3 id="什么是nvm"><a href="#什么是nvm" class="headerlink" title="什么是nvm"></a>什么是nvm</h3><p>nvm 全称 Node Version Manager是Node版本管理器，它让我们能方便的对Node的版本进行切换。</p>
-<h3 id="安装nvm"><a href="#安装nvm" class="headerlink" title="安装nvm"></a>安装nvm</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>查看可用的Node版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm ls</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装稳定的版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install stable</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装某个版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install &lt;version&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除某个版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm uninstall &lt;version&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>切换某个版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm use &lt;version&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="为什么用nvm"><a href="#为什么用nvm" class="headerlink" title="为什么用nvm"></a>为什么用nvm</h3><p>随着Node生态圈不断丰富，Node版本不断迭代，基于Node的工具也层出不穷。<br>各种工具&amp;各种项目依赖的Node版本都不尽相同，某个项目或者某个工具在最新的Node版本就会报错，而在低版本的Node并不会。<br>比如Hexo搭建静态博客的工具，在最新版本的v11.0.0安装过程中总会报错，而在v10.0.0安装非常顺利，这就是为什么我要用nvm管理不同Node版本。针对不用的项目或者工具，我选择最适合其的Node版本。</p>
-<h4 id="把所有平凡的事都做好"><a href="#把所有平凡的事都做好" class="headerlink" title="把所有平凡的事都做好"></a>把所有平凡的事都做好</h4>
+        <p>本文主要总结目前常用的几种调试方法。</p>
+<h3 id="console调试"><a href="#console调试" class="headerlink" title="console调试"></a>console调试</h3><p>log调试法，很无脑，非常实用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(&apos;hello world‘)</span><br></pre></td></tr></table></figure></p>
+<h3 id="浏览器F12断点调试"><a href="#浏览器F12断点调试" class="headerlink" title="浏览器F12断点调试"></a>浏览器F12断点调试</h3><p>能更好的理解JS是一种单线程的语言<br>F10 单行执行 (更建议新手采用这种，很容易理解JS语法)</p>
+<h3 id="移动端调试-vConsole"><a href="#移动端调试-vConsole" class="headerlink" title="移动端调试 vConsole"></a>移动端调试 vConsole</h3><p><a href="https://github.com/Tencent/vConsole" target="_blank" rel="noopener">vConsole下载</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;js/vconsole.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  // 初始化</span><br><span class="line">  var vConsole = new VConsole();</span><br><span class="line">  console.log(&apos;VConsole is cool&apos;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
@@ -343,15 +327,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/11/25/nvm管理Node版本/" rel="next" title="nvm管理Node版本">
+                <i class="fa fa-chevron-left"></i> nvm管理Node版本
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/26/web开发调试方法/" rel="prev" title="web开发调试方法">
-                web开发调试方法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -465,7 +449,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是nvm"><span class="nav-number">1.</span> <span class="nav-text">什么是nvm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装nvm"><span class="nav-number">2.</span> <span class="nav-text">安装nvm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么用nvm"><span class="nav-number">3.</span> <span class="nav-text">为什么用nvm</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#把所有平凡的事都做好"><span class="nav-number">3.1.</span> <span class="nav-text">把所有平凡的事都做好</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#console调试"><span class="nav-number">1.</span> <span class="nav-text">console调试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浏览器F12断点调试"><span class="nav-number">2.</span> <span class="nav-text">浏览器F12断点调试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#移动端调试-vConsole"><span class="nav-number">3.</span> <span class="nav-text">移动端调试 vConsole</span></a></li></ol></div>
             
 
           </div>
